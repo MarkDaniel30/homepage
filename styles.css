@@ -109,7 +109,7 @@ body {
   color: var(--secondary-text-color);
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .contact-info__item:not(:last-child) {
