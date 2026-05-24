@@ -98,7 +98,7 @@ body {
   color: var(--secondary-text-color);
   text-decoration: none;
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 
 .contact-info__item:not(:last-child) {
@@ -222,4 +222,16 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.intro__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.intro_text {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  text-align: center;
 }
