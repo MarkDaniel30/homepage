@@ -4,9 +4,12 @@
   box-sizing: border-box;
 }
 
+
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.5;
+  background-color: rgb(0, 162, 255);
 
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
@@ -36,10 +39,11 @@ body {
 
 .resume {
   margin: 50px auto;
-  border: 1px solid #f5f5f5;
-  box-shadow: 1px 1px 7px 7px #f5f5f5;
+  border: 2px solid #f5f5f5;
+  border-radius: 5px;
   padding: 30px 0;
   max-width: 900px;
+  background-color: white;
 }
 
 .resume__block {
@@ -65,7 +69,10 @@ body {
   .experiences {
     margin-right: 0;
   }
+
+
 }
+
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -83,7 +90,11 @@ body {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
 }
-
+.contacts-info__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .contact-info__block {
   display: flex;
   flex-direction: column;
@@ -128,6 +139,12 @@ body {
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
+  transition: transform 0.3s ease;
+}
+
+
+.contact-info__avatar:hover {
+  transform: scale(1.05);
 }
 
 .experiences {
@@ -136,7 +153,7 @@ body {
 }
 
 .experiences__header {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   text-align: left;
   margin-bottom: 20px;
 }
@@ -150,8 +167,6 @@ body {
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -188,7 +203,7 @@ body {
 }
 
 .additional-info__education-header {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   text-align: left;
   margin-bottom: 20px;
 }
@@ -215,11 +230,45 @@ body {
 }
 
 .additional-info__languages-header {
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
   text-align: left;
   margin-bottom: 20px;
 }
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.intro__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.intro_text {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  text-align: center;
+}
+
+.intro{
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+
+.skills__mine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.skills{
+    text-align: center;
+}
+
+.skills__header {
+    color: var(--secondary-text-color);
+    margin-bottom: 5px;
 }
